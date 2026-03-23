@@ -53,9 +53,9 @@ public class PrestamoServiceImpl implements PrestamoService {
     entity.setNombre(dto.getNombre());
     entity.setDni(dto.getDni());
     entity.setMonto(dto.getMonto());
-    entity.setNumeroDeCuotas(dto.getNumeroCuotas());
-    entity.setTasaDeInteres(dto.getTasaInteres());
-    entity.setTipoDeAmortizacion(dto.getTipoAmortizacion());
+    entity.setNumeroDeCuotas(dto.getNumeroDeCuotas());
+    entity.setTasaDeInteres(dto.getTasaDeInteres());
+    entity.setTipoDeAmortizacion(dto.getTipoDeAmortizacion());
 
     // Guardar y devolver como DTO
     Prestamo updated = repository.save(entity);

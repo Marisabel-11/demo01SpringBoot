@@ -24,7 +24,6 @@ public class Prestamo {
   private Integer numeroDeCuotas;
   @Column(name = "tasaDeInteres", nullable = false, precision = 5,scale = 2)
   private BigDecimal tasaDeInteres;
-  @Enumerated(EnumType.STRING)
   @Column(name = "tipoDeAmortizacion",length = 20, nullable = false)
   private String tipoDeAmortizacion;
 

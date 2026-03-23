@@ -4,6 +4,7 @@ import com.example.demo.dto.PrestamoCreateDTO;
 import com.example.demo.dto.PrestamoDTO;
 import com.example.demo.model.Prestamo;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 import java.util.List;
 
@@ -13,7 +14,9 @@ public interface PrestamoMapper {
   PrestamoDTO toDto(Prestamo entity);
 
   // DTO -> Entity
-  Prestamo toEntity(PrestamoCreateDTO dto);
+
+    @Mapping(target = "id", ignore = true)
+    Prestamo toEntity(PrestamoCreateDTO dto);
 
   List<PrestamoDTO> toDtoList(List<Prestamo> entities);
 }

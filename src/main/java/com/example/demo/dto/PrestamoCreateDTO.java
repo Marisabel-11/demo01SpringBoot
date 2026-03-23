@@ -10,7 +10,7 @@ public class PrestamoCreateDTO {
   private String nombre;
   private String dni;
   private BigDecimal monto;
-  private Integer numeroCuotas;
-  private BigDecimal tasaInteres;
-  private String tipoAmortizacion;
+  private Integer numeroDeCuotas;
+  private BigDecimal tasaDeInteres;
+  private String tipoDeAmortizacion;
 }
